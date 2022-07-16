@@ -1,0 +1,21 @@
+body {
+  font: "Comme", "Comme", "Comme";
+  font-family: "Comme", "Comme", "Comme";
+  padding: 20px 20px 60px;
+  max-width: 1600px;
+  margin: auto;
+  background: #000000;
+}
+.series {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Comme", "Comme", "Comme";
+    padding: 20px 20px 60px;
+    max-width: 2000px;
+    margin: auto;
+    background: #000000;
+  }
+}

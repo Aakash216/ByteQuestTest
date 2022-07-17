@@ -8,7 +8,6 @@ import CardMedia from "@mui/material/CardMedia";
 import TurnedInNotIcon from "@mui/icons-material/TurnedInNot";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 const axios = require("axios").default;
-import Box from "@mui/material/Box";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,7 +54,7 @@ export default function AltCard() {
 
       <Grid container spacing={2} direction="row">
         {data.map((item) => (
-          <Grid item xs={12} sm={6} md={3} lg={3}>
+          <Grid key={item.name} item xs={12} sm={6} md={3} lg={3}>
             <Card
               style={{
                 width: "auto",
